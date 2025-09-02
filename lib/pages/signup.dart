@@ -8,12 +8,10 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Background Image
           Positioned.fill(
             child: Image.asset("assets/bg_image1.png", fit: BoxFit.cover),
           ),
 
-          // Foreground White Container
           Positioned(
             top: 150,
             left: 0,
@@ -38,7 +36,6 @@ class SignUpPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Email
                     TextField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
@@ -50,7 +47,6 @@ class SignUpPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-                    // Password
                     TextField(
                       obscureText: true,
                       decoration: InputDecoration(
@@ -62,7 +58,6 @@ class SignUpPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-                    // Confirm Password
                     TextField(
                       obscureText: true,
                       decoration: InputDecoration(
@@ -74,7 +69,6 @@ class SignUpPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Sign Up Button
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -89,7 +83,6 @@ class SignUpPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
 
-                    // Navigate to Sign In
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
